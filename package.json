@@ -8,7 +8,7 @@
   "scripts": {
     "install:func": "cd app/functions && yarn --ignore-engines",
     "install:nuxt": "cd app/nuxt && yarn --ignore-engines",
-    "install": "yarn install:func  && yarn install:nuxt",
+    "install": "yarn install:func && yarn install:nuxt",
     "preinstall": "mkdir -p dist/functions",
     "postinstall": "cd app/functions && yarn deps",
     "dev:func": "cd app/functions && yarn dev",
