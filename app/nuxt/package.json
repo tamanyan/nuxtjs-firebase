@@ -1,30 +1,26 @@
 {
-  "name": "nuxtjs-sample-front",
+  "name": "nuxtjs-firebase",
   "version": "1.0.0",
-  "description": "Sample Nuxt.js project",
-  "author": "Taketo Yoshida <tamanyan.sss@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "@nuxtjs/axios": "5.3.1",
     "@nuxtjs/proxy": "1.2.4",
     "axios": "0.18.0",
     "nuxt": "1.4.2",
-    "dotenv": "5.0.1",
-    "firebase": "4.12.1"
+    "nuxt-property-decorator": "1.2.0",
+    "vuex-class": "0.3.1",
+    "dotenv": "6.0.0",
+    "firebase": "5.3.1"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "eslint": "^4.15.0",
-    "eslint-friendly-formatter": "^3.0.0",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0"
+    "@types/node": "10.7.1",
+    "ts-loader": "3.5.0",
+    "typescript": "3.0.1"
   }
 }

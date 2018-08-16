@@ -23,32 +23,24 @@ module.exports = {
     ]
   },
   /*
-  ** Customize the progress bar color
+  ** Customize the progress-bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: "#3B8070" },
+  /*
+  ** Build configuration
+  */
+  css: ["~/assets/css/main.css"],
   /*
   ** Build configuration
   */
   build: {
     publicPath: '/assets/',
-    extractCSS: true,
-    /*
-    ** Run ESLint on save
-    */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    }
+    extractCSS: true
   },
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/proxy'
+    '@nuxtjs/proxy',
+    "~/modules/typescript.js"
   ],
   proxy: {
     '/api/': { target: process.env.API_BASE_URL, pathRewrite: {'^/api/': ''}},
@@ -57,4 +49,3 @@ module.exports = {
     proxy: true // Can be also an object with default options
   },
 }
-

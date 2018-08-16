@@ -1,35 +1,22 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <user name="test" photoURL="test"></user>
-    </div>
-  </section>
+  <div>
+    <div>{{ name }}</div>
+    <div>{{ photoURL }}</div>
+  </div>
 </template>
 
 <script lang="ts">
 
-import AppLogo from '~/components/AppLogo.vue';
-import User from '~/components/User.vue';
 import { Component, Inject, Model, Prop, Vue, Watch } from 'nuxt-property-decorator'
 
-@Component({
-  components: {
-    AppLogo,
-    User
-  }
-})
-export default class extends Vue {
+@Component({})
+export default class User extends Vue {
 
-  data() {
-    return {
-      test: 1
-    };
-  }
+  @Prop({ default: 'Guest' })
+  name: string
 
-  mounted() {
-    console.log(this.$store.state.user);
-  }
+  @Prop()
+  photoURL: string
 }
 </script>
 

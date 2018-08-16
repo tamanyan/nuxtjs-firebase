@@ -1,6 +1,6 @@
-# sample
+# nuxtjs-firebase
 
-> Sample Nuxt.js project
+> Nuxt.js on Firebase
 
 ## Build Setup
 
@@ -20,4 +20,3 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-

@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "commonjs",
-    "outDir": "../../dist/functions",
+    "module": "ES6",
+    "moduleResolution": "node",
     "noImplicitAny": true,
     "experimentalDecorators": true,
     "strictNullChecks": true,
@@ -10,13 +10,9 @@
     "suppressImplicitAnyIndexErrors": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
-    "sourceMap": true,
-    "baseUrl": "src"
-  },
-  "include": [
-    "./src/**/*"
-  ],
-  "exclude": [
-    "node_modeles"
-  ]
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"]
+    }
+  }
 }
