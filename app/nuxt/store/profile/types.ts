@@ -13,6 +13,7 @@ export interface User {
 }
 
 export interface ProfileState {
-  user?: User;
+  user: User;
+  isReady: boolean;
   error: boolean;
 }

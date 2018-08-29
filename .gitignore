@@ -19,3 +19,9 @@ dist/
 
 # vscode
 .vscode
+
+# firebase
+.firebase
+
+# jest
+coverage/

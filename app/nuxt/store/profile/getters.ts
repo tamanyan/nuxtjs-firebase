@@ -12,10 +12,7 @@ import { RootState } from '../types';
 export const getters: GetterTree<ProfileState, RootState> = {
   fullName(state): string {
     const { user } = state;
-    const firstName = (user && user.firstName) || '';
-    const lastName = (user && user.lastName) || '';
-    console.log("fullName");
 
-    return `${firstName} ${lastName}`;
+    return `${user.firstName} ${user.lastName}`;
   }
 };

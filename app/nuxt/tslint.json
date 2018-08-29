@@ -1,0 +1,32 @@
+{
+  "extends": [
+    "tslint-microsoft-contrib"
+  ],
+  "rules": {
+    "no-require-imports": false,
+    "no-var-requires": false,
+    "no-any": false,
+    "no-unsafe-any": false,
+    "mocha-no-side-effect-code": false,
+    "missing-jsdoc": false,
+    "no-relative-imports": false,
+    "strict-boolean-expressions": false,
+    "ordered-imports": false,
+    "no-console": false,
+    "export-name": false,
+    "no-import-side-effect": false,
+    "no-submodule-imports": false,
+    "promise-function-async": false,
+    "no-void-expression": false,
+    "no-redundant-jsdoc": false,
+    "prefer-type-cast": false,
+    "interface-name": false,
+    "typedef": [
+      true,
+      "parameter",
+      "arrow-parameter",
+      "property-declaration",
+      "member-variable-declaration"
+    ]
+  }
+}

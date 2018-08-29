@@ -1,3 +1,3 @@
-# Backend for Frontend & SSR
+# SSR
 
 BFF and SSR fucntions

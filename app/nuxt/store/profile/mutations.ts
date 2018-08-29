@@ -10,11 +10,12 @@ import { ProfileState, User } from './types';
 
 export const mutations: MutationTree<ProfileState> = {
   profileLoaded(state, payload: User) {
-    state.error = false;
     state.user = payload;
+    state.error = false;
+    state.isReady = true;
   },
   profileError(state) {
     state.error = true;
-    state.user = undefined;
+    state.isReady = false;
   }
 };

@@ -15,7 +15,6 @@ const storeOptions: StoreOptions<RootState> = {
   },
   actions: {
     nuxtServerInit({ commit }, { app }) {
-      console.log("nuxtServerInit")
     }
   },
   modules: {
