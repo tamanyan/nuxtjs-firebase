@@ -1,22 +1,26 @@
+/**
+ * Copyright(c) 2018
+ *
+ * @summary index.ts
+ * @author Taketo Yoshida
+ */
 
-import Vuex from 'vuex'
+import Vuex, { StoreOptions } from 'vuex';
+import { RootState } from './types';
+import { profile } from './profile';
 
-const store = () => new Vuex.Store({
-  // global variables
+const storeOptions: StoreOptions<RootState> = {
   state: {
-    user: {
-      id: "1",
-      name: "Guest"
-    }
-  },
-  mutations: {
+    version: '1.0.0' // a simple property
   },
   actions: {
-    async nuxtServerInit({ commit }, { app }) {
+    nuxtServerInit({ commit }, { app }) {
+      console.log("nuxtServerInit")
     }
   },
-  plugins: [
-  ]
-})
+  modules: {
+    profile
+  }
+};
 
-export default store
+export default () => new Vuex.Store<RootState>(storeOptions);

@@ -2,7 +2,14 @@
   <section class="container">
     <div>
       <app-logo/>
-      <user name="test" photoURL="test"></user>
+      <div v-if="profile.user">
+        <p>
+            Full name: {{ fullName }}
+        </p>
+        <p>
+            Email: {{ email }}
+        </p>
+      </div>
     </div>
   </section>
 </template>
@@ -10,27 +17,36 @@
 <script lang="ts">
 
 import AppLogo from '~/components/AppLogo.vue';
-import User from '~/components/User.vue';
+// import User from '~/components/User.vue';
+import { State, Action, Getter } from 'vuex-class';
 import { Component, Inject, Model, Prop, Vue, Watch } from 'nuxt-property-decorator'
+import { ProfileState, User } from '~/store/profile/types';
+
+const namespace: string = 'profile';
 
 @Component({
   components: {
-    AppLogo,
-    User
+    AppLogo
   }
 })
 export default class extends Vue {
+  @State('profile') profile: ProfileState;
 
-  data() {
-    return {
-      test: 1
-    };
-  }
+  @Action('fetchData', { namespace }) fetchData: any;
+
+  @Getter('fullName', { namespace }) fullName: string;
 
   mounted() {
-    console.log(this.$store.state.user);
+    this.fetchData();
+  }
+
+  // computed variable based on user's email
+  get email() {
+    const user = this.profile && this.profile.user;
+    return (user && user.email) || '';
   }
 }
+
 </script>
 
 <style>

@@ -13,7 +13,7 @@
     "postinstall": "cd app/functions && yarn deps",
     "dev:func": "cd app/functions && yarn dev",
     "dev:nuxt": "cd app/nuxt && yarn dev",
-    "dev": "npm-run-all -p serve dev:func dev:nuxt",
+    "dev": "yarn dev:nuxt",
     "build:func": "cd app/functions && yarn build",
     "build:nuxt": "cd app/nuxt && yarn build && rm -rf ../../dist/functions/nuxt && cp -r .nuxt ../../dist/functions/nuxt",
     "build": "npm-run-all build:func build:nuxt setup",

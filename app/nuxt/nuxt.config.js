@@ -38,14 +38,6 @@ module.exports = {
     extractCSS: true
   },
   modules: [
-    '@nuxtjs/axios',
-    '@nuxtjs/proxy',
     "~/modules/typescript.js"
-  ],
-  proxy: {
-    '/api/': { target: process.env.API_BASE_URL, pathRewrite: {'^/api/': ''}},
-  },
-  axios: {
-    proxy: true // Can be also an object with default options
-  },
+  ]
 }

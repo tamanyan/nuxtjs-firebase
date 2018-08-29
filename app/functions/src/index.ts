@@ -7,6 +7,4 @@
 
 import * as functions from 'firebase-functions';
 
-export const ssrapp = functions.https.onRequest(require('./ssr'));
-
-export const api = functions.https.onRequest(require('./api'));
+export const ssr = functions.https.onRequest(require('./ssr'));

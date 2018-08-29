@@ -7,9 +7,6 @@
       "**/node_modules/**"
     ],
     "rewrites": [{
-      "source": "/api/**",
-      "function": "api"
-    },{
       "source": "**",
       "function": "ssrapp"
     }],
@@ -18,13 +15,13 @@
         "source" : "**/*.@(jpg|jpeg|gif|png|ico|webp)",
         "headers" : [ {
         "key" : "Cache-Control",
-        "value" : "max-age=86400"
+        "value" : "max-age=604800"
         } ]
       }, {
         "source" : "**/*.@(js|css)",
         "headers" : [ {
         "key" : "Cache-Control",
-        "value" : "max-age=86400"
+        "value" : "max-age=604800"
         } ]
       }
     ]
