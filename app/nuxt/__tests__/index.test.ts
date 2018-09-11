@@ -8,26 +8,29 @@
 import { resolve } from 'path';
 const { Nuxt, Builder } = require('nuxt');
 
-jest.setTimeout(30000);
+jest.setTimeout(60000);
 
 let nuxt = undefined;
 
 beforeAll(async () => {
-  const config = {
-    dev: false,
-    buildDir: resolve(__dirname, '../.nuxt')
-  };
-  nuxt = new Nuxt(config);
-  await nuxt.listen(4000, 'localhost');
+  const config = require('../nuxt.config.js');
+  config.dev = false;
+  config.rootDir = resolve(__dirname, '..');
+  config.ssr = true;
+
+  nuxt = new Nuxt(config)
+
+  await new Builder(nuxt).build()
 });
 
 describe('Rendering test', () => {
-  // Example of testing only generated html
-  test('Route / exits and render HTML', async () => {
+  // Example of testing
+
+  test('Route / exits and render HTML without error', async () => {
     const context = {};
-    const { html } = nuxt.renderRoute('/', context);
-    console.log(html);
-    expect(html).toBe('');
+    const { error } = await nuxt.renderRoute('/', context);
+
+    expect(error).toBe(null);
   });
 });
 

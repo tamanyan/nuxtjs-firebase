@@ -7,9 +7,9 @@ import { RootState } from '../types';
 
 export const state: ProfileState = {
     user: {
-      firstName: "",
-      lastName: "",
-      email: "",
+      firstName: '',
+      lastName: '',
+      email: ''
     },
     isReady: false,
     error: false

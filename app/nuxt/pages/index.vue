@@ -12,7 +12,7 @@
 import AppLogo from '~/components/AppLogo.vue';
 import UserProfile from '~/components/UserProfile.vue';
 import { State, Action, Getter } from 'vuex-class';
-import { Component, Inject, Model, Prop, Vue, Watch } from 'nuxt-property-decorator'
+import { Component, Vue } from 'nuxt-property-decorator';
 import { ProfileState, User } from '~/store/profile/types';
 
 const namespace: string = 'profile';

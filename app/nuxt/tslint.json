@@ -21,12 +21,19 @@
     "no-redundant-jsdoc": false,
     "prefer-type-cast": false,
     "interface-name": false,
+    "no-default-export": false,
     "typedef": [
       true,
       "parameter",
       "arrow-parameter",
       "property-declaration",
       "member-variable-declaration"
+    ]
+  },
+  "linterOptions": {
+    "exclude": [
+      "node_modiles/*",
+      "assets/*"
     ]
   }
 }

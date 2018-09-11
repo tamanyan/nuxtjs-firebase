@@ -14,8 +14,8 @@ const storeOptions: StoreOptions<RootState> = {
     version: '1.0.0' // a simple property
   },
   actions: {
-    nuxtServerInit({ commit }, { app }) {
-    }
+    // nuxtServerInit({ commit }, { app }) {
+    // }
   },
   modules: {
     profile
