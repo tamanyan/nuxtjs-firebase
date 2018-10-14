@@ -22,6 +22,7 @@
     "prefer-type-cast": false,
     "interface-name": false,
     "no-default-export": false,
+    "no-implicit-dependencies": [true, "dev"],
     "typedef": [
       true,
       "parameter",

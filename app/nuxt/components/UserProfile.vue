@@ -6,7 +6,6 @@
 </template>
 
 <script lang="ts">
-
 import { Component, Inject, Model, Prop, Vue, Watch } from 'nuxt-property-decorator'
 
 @Component({})

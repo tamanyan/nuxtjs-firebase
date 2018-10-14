@@ -38,6 +38,6 @@ module.exports = {
     extractCSS: true
   },
   modules: [
-    "~/modules/typescript.js"
+    "nuxt-typescript"
   ]
 }

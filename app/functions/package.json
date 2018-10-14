@@ -18,17 +18,16 @@
   },
   "dependencies": {
     "axios": "0.18.0",
-    "dotenv": "5.0.1",
-    "express": "4.16.3",
-    "firebase": "5.4.1",
+    "dotenv": "6.1.0",
+    "express": "4.16.4",
+    "firebase": "5.5.4",
     "firebase-admin": "6.0.0",
     "firebase-functions": "2.0.5",
-    "nuxt": "1.4.2",
+    "nuxt": "2.2.0",
     "nuxt-property-decorator": "1.2.0",
     "vuex-class": "0.3.1",
     "vuex": "3.0.1"
   },
-
   "devDependencies": {
     "@types/axios": "0.14.0",
     "@types/jest": "23.3.1",

@@ -8,7 +8,6 @@
 </template>
 
 <script lang="ts">
-
 import AppLogo from '~/components/AppLogo.vue';
 import UserProfile from '~/components/UserProfile.vue';
 import { State, Action, Getter } from 'vuex-class';
@@ -42,7 +41,6 @@ export default class extends Vue {
     return user.email;
   }
 }
-
 </script>
 
 <style>
