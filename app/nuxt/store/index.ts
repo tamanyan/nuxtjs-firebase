@@ -5,7 +5,7 @@
  * @author Taketo Yoshida
  */
 
-import Vuex, { StoreOptions } from 'vuex';
+import { Store, StoreOptions } from 'vuex';
 import { RootState } from './types';
 import { profile } from './profile';
 
@@ -22,4 +22,4 @@ const storeOptions: StoreOptions<RootState> = {
   }
 };
 
-export default () => new Vuex.Store<RootState>(storeOptions);
+export default () => new Store<RootState>(storeOptions);

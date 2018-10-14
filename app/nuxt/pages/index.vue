@@ -8,11 +8,11 @@
 </template>
 
 <script lang="ts">
-import AppLogo from '~/components/AppLogo.vue';
-import UserProfile from '~/components/UserProfile.vue';
+import AppLogo from '../components/AppLogo.vue';
+import UserProfile from '../components/UserProfile.vue';
 import { State, Action, Getter } from 'vuex-class';
 import { Component, Vue } from 'nuxt-property-decorator';
-import { ProfileState, User } from '~/store/profile/types';
+import { ProfileState, User } from '../store/profile/types';
 
 const namespace: string = 'profile';
 
