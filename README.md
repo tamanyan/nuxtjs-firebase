@@ -1,5 +1,10 @@
 # nuxtjs-firebase
 
+Nuxt.js firebase sample app
+
+- Nuxt.js v2.2.0
+- Firebase Cloud Functions v2.0.5
+
 ## Installation
 
 ```sh
