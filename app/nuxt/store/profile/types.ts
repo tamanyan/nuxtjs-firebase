@@ -6,14 +6,14 @@
  */
 
 export interface User {
-  firstName: string;
-  lastName: string;
-  email: string;
-  phone?: string;
+  firstName: string
+  lastName: string
+  email: string
+  phone?: string
 }
 
 export interface ProfileState {
-  user: User;
-  isReady: boolean;
-  error: boolean;
+  user: User
+  isReady: boolean
+  error: boolean
 }

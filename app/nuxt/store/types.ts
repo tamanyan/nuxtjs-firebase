@@ -6,5 +6,5 @@
  */
 
 export interface RootState {
-  version: string;
+  version: string
 }

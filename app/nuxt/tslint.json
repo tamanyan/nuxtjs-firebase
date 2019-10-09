@@ -23,6 +23,7 @@
     "interface-name": false,
     "no-default-export": false,
     "no-implicit-dependencies": [true, "dev"],
+    "semicolon": [true, "never"],
     "typedef": [
       true,
       "parameter",

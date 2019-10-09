@@ -5,17 +5,17 @@
  * @author Taketo Yoshida
  */
 
-import { MutationTree } from 'vuex';
-import { ProfileState, User } from './types';
+import { MutationTree } from 'vuex'
+import { ProfileState, User } from './types'
 
 export const mutations: MutationTree<ProfileState> = {
   profileLoaded(state: ProfileState, payload: User) {
-    state.user = payload;
-    state.error = false;
-    state.isReady = true;
+    state.user = payload
+    state.error = false
+    state.isReady = true
   },
   profileError(state: ProfileState) {
-    state.error = true;
-    state.isReady = false;
+    state.error = true
+    state.isReady = false
   }
-};
+}

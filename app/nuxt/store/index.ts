@@ -5,9 +5,9 @@
  * @author Taketo Yoshida
  */
 
-import { Store, StoreOptions } from 'vuex';
-import { RootState } from './types';
-import { profile } from './profile';
+import { Store, StoreOptions } from 'vuex'
+import { RootState } from './types'
+import { profile } from './profile'
 
 const storeOptions: StoreOptions<RootState> = {
   state: {
@@ -20,6 +20,6 @@ const storeOptions: StoreOptions<RootState> = {
   modules: {
     profile
   }
-};
+}
 
-export default () => new Store<RootState>(storeOptions);
+export default () => new Store<RootState>(storeOptions)

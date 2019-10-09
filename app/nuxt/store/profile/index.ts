@@ -1,9 +1,9 @@
-import { Module } from 'vuex';
-import { getters } from './getters';
-import { actions } from './actions';
-import { mutations } from './mutations';
-import { ProfileState } from './types';
-import { RootState } from '../types';
+import { Module } from 'vuex'
+import { getters } from './getters'
+import { actions } from './actions'
+import { mutations } from './mutations'
+import { ProfileState } from './types'
+import { RootState } from '../types'
 
 export const state: ProfileState = {
     user: {
@@ -13,9 +13,9 @@ export const state: ProfileState = {
     },
     isReady: false,
     error: false
-};
+}
 
-const namespaced: boolean = true;
+const namespaced: boolean = true
 
 export const profile: Module<ProfileState, RootState> = {
   namespaced,
@@ -23,4 +23,4 @@ export const profile: Module<ProfileState, RootState> = {
   getters,
   actions,
   mutations
-};
+}

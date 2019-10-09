@@ -5,14 +5,14 @@
  * @author Taketo Yoshida
  */
 
-import { GetterTree } from 'vuex';
-import { ProfileState } from './types';
-import { RootState } from '../types';
+import { GetterTree } from 'vuex'
+import { ProfileState } from './types'
+import { RootState } from '../types'
 
 export const getters: GetterTree<ProfileState, RootState> = {
   fullName(state: ProfileState): string {
-    const { user } = state;
+    const { user } = state
 
-    return `${user.firstName} ${user.lastName}`;
+    return `${user.firstName} ${user.lastName}`
   }
-};
+}

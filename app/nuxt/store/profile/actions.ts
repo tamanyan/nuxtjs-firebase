@@ -6,9 +6,9 @@
  */
 
 // import axios from 'axios';
-import { ActionTree, ActionContext } from 'vuex';
-import { ProfileState, User } from './types';
-import { RootState } from '../types';
+import { ActionTree, ActionContext } from 'vuex'
+import { ProfileState, User } from './types'
+import { RootState } from '../types'
 
 export const actions: ActionTree<ProfileState, RootState> = {
   fetchData(context: ActionContext<ProfileState, RootState>): any {
@@ -16,10 +16,10 @@ export const actions: ActionTree<ProfileState, RootState> = {
       firstName: 'Taketo',
       lastName: 'Yoshida',
       email: 'sample@test.com'
-    };
+    }
 
-    context.commit('profileLoaded', payload);
+    context.commit('profileLoaded', payload)
 
     // Make http request in order to get user info instead of mock
   }
-};
+}
