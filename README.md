@@ -3,7 +3,7 @@
 Nuxt.js firebase sample app
 
 - Nuxt.js v2.2.0
-- Firebase Cloud Functions v2.0.5
+- Firebase Cloud Functions v3.2.0
 
 ## Installation
 
