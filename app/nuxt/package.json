@@ -11,7 +11,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "axios": "0.18.1",
+    "axios": "0.21.1",
     "dotenv": "6.1.0",
     "firebase": "7.1.0",
     "nuxt": "2.2.0",
